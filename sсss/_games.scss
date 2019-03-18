@@ -1,0 +1,9 @@
+.games{
+    @include grid(300px 300px 300px 300px, center, center, 50px);
+}
+.h1{
+    grid-column: 1 / span 4;
+    @include font(30px, $day-color);
+    text-align:center;
+    margin-top:30px;
+}

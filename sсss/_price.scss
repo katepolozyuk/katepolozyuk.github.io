@@ -1,0 +1,9 @@
+.price{
+    @include grid(400px 400px 400px, center, center, 50px);
+}
+.h1{
+    grid-column: 1 / span 3;
+    @include font(30px, $day-color);
+    text-align:center;
+    margin-top:30px;
+}

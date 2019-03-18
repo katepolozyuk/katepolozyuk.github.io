@@ -1,0 +1,59 @@
+#calendar{
+    @include grid(80px 80px 80px 80px 80px 80px 80px, none, none, 2px);
+    @include border($day-color, 1px);
+    padding: 20px;
+    background: $background-black;
+}
+.calendar-header{
+    grid-column: 1 / span 7;
+}
+.day-off{
+    grid-column: 1 / span 4;
+}
+
+.calendar-header{
+    @include grid(200px 160px 200px, none, none, 0px);
+    .previous-month{
+        @include font(21, $day-color-sits);
+    }
+    .current-month{
+        @include font(21px, white);
+        text-align: center;
+    }
+    .next-month{
+        @include font(21, $day-color-sits);
+        text-align: right;
+    }
+}
+
+.day, .weekend-day{
+    @include font(14px, $day-color);
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.day-past{
+    @include font(30px,$day-color );
+    @include day($day-background);
+    height: 51px;
+}
+
+.day-today{
+    @include day(rgb(189, 37, 37));
+    @include font(30px,$day-color);
+}
+.day-future{
+    @include day($day-background);
+    @include font(30px,$day-color);
+    &:hover{
+        background-color: $day-background-active;
+        @include font(30px,white);
+        .sits{
+            @include font(12px,white);
+        }
+    }
+    .sits{
+        @include font(12px,$day-color-sits);
+    }
+}
