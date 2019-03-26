@@ -1,0 +1,36 @@
+@mixin list() {
+    list-style: none;
+    margin: 0;
+    padding-left:0;
+    li{
+        display: inline-block;
+    }
+}
+
+@mixin day($background-color) {
+    background-color: $background-color;
+    border-radius: 10px;
+    padding:10px;
+}
+
+@mixin font($size,$color){
+    font-family: Verdana,Geneva,sans-serif; 
+    font-size: $size;
+    color: $color;
+}
+
+
+
+
+@mixin border($color, $size) {
+    border: solid $size $color;
+    border-radius: 10px;
+}
+
+@mixin grid ($grid-template-colums, $justify-content, $align-items, $grid-gap) {
+    display: grid;
+    grid-template-columns: $grid-template-colums;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    grid-gap: $grid-gap;
+}

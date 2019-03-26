@@ -1,0 +1,15 @@
+@import 'mixin';
+@import 'var';
+@import 'grid';
+@import 'calendar';
+@import 'headerfooter';
+@import 'form';
+@import 'games';
+@import 'price';
+
+body{
+    //background: rgb(27, 1, 22);
+    background-image: url(/project/app/img/background.jpg);
+    margin: 0px;
+}
+

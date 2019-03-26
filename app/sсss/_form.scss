@@ -1,0 +1,41 @@
+.booking{
+    &-form{
+       // text-align: end;
+    }
+}
+
+h1{
+    @include font(30px, $day-color);
+    
+    text-align:center;
+    margin-top:30px;
+}
+.booking-parametrs {
+    p{
+        @include font(18px, $day-color);
+        margin: 10px 0px 10px 0px;
+    }
+    select, input, textarea {
+        width: 300px;
+        padding: 10px 0px 10px 0px;
+        @include border($day-color-sits, 2px);
+    }  
+}
+
+.booking-btn{
+    width:200px;
+    @include border($day-color, 2px);
+    text-decoration: none;
+    background: none;
+    @include font(18px, $day-color);
+    padding: 10px;
+    &:hover{
+        @include border($day-color-sits, 2px);
+    }
+    margin-top:10px;
+}
+.cost{
+    @include font(18px, $day-color);
+    margin-top:25px;
+}
+

@@ -1,0 +1,36 @@
+.header{
+    @include grid(100px 700px, space-around, center, 0px);
+}
+
+.calendar{
+    @include grid(80px 80px 80px 80px 80px 80px 80px, none, none, 2px);
+    .calendar-header{
+        grid-column: 1 / span 7;
+        @include grid(200px 160px 200px, none, none, 0px);
+    }
+    .day-off{
+        grid-column: 1 / span 4;
+    }
+        
+}
+.booking{
+    @include grid(612px 300px, center, center, 20px);    //612 - calendar, 300 - form
+    .h1{
+        grid-column: 1 / span 2;
+    }
+}
+.games{
+    @include grid(300px 300px 300px 300px, center, center, 50px);
+    .h1{
+        grid-column: 1 / span 4; 
+    }
+}
+.price{
+    @include grid(400px 400px 400px, center, center, 50px);
+    .h1{
+        grid-column: 1 / span 3;
+    }
+}
+.footer{
+    @include grid(200px 300px 200px, space-around, center, 0px);
+}

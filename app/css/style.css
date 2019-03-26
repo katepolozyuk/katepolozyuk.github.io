@@ -1,40 +1,82 @@
-#calendar {
+.header {
+  display: grid;
+  grid-template-columns: 100px 700px;
+  justify-content: space-around;
+  align-items: center;
+  grid-gap: 0px; }
+
+.calendar {
   display: grid;
   grid-template-columns: 80px 80px 80px 80px 80px 80px 80px;
   justify-content: none;
   align-items: none;
-  grid-gap: 2px;
+  grid-gap: 2px; }
+  .calendar .calendar-header {
+    grid-column: 1 / span 7;
+    display: grid;
+    grid-template-columns: 200px 160px 200px;
+    justify-content: none;
+    align-items: none;
+    grid-gap: 0px; }
+  .calendar .day-off {
+    grid-column: 1 / span 4; }
+
+.booking {
+  display: grid;
+  grid-template-columns: 612px 300px;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 20px; }
+  .booking .h1 {
+    grid-column: 1 / span 2; }
+
+.games {
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 50px; }
+  .games .h1 {
+    grid-column: 1 / span 4; }
+
+.price {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 50px; }
+  .price .h1 {
+    grid-column: 1 / span 3; }
+
+.footer {
+  display: grid;
+  grid-template-columns: 200px 300px 200px;
+  justify-content: space-around;
+  align-items: center;
+  grid-gap: 0px; }
+
+#calendar {
   border: solid 1px #f0f0f0;
   border-radius: 10px;
   padding: 20px;
   background: rgba(0, 0, 0, 0.6); }
 
-.calendar-header {
-  grid-column: 1 / span 7; }
+.calendar-header .previous-month {
+  font-family: Verdana,Geneva,sans-serif;
+  font-size: 21;
+  color: #dbcae2; }
 
-.day-off {
-  grid-column: 1 / span 4; }
+.calendar-header .current-month {
+  font-family: Verdana,Geneva,sans-serif;
+  font-size: 21px;
+  color: white;
+  text-align: center; }
 
-.calendar-header {
-  display: grid;
-  grid-template-columns: 200px 160px 200px;
-  justify-content: none;
-  align-items: none;
-  grid-gap: 0px; }
-  .calendar-header .previous-month {
-    font-family: Verdana,Geneva,sans-serif;
-    font-size: 21;
-    color: #dbcae2; }
-  .calendar-header .current-month {
-    font-family: Verdana,Geneva,sans-serif;
-    font-size: 21px;
-    color: white;
-    text-align: center; }
-  .calendar-header .next-month {
-    font-family: Verdana,Geneva,sans-serif;
-    font-size: 21;
-    color: #dbcae2;
-    text-align: right; }
+.calendar-header .next-month {
+  font-family: Verdana,Geneva,sans-serif;
+  font-size: 21;
+  color: #dbcae2;
+  text-align: right; }
 
 .day, .weekend-day {
   font-family: Verdana,Geneva,sans-serif;
@@ -109,41 +151,23 @@
 
 .header {
   height: 80px;
-  display: grid;
-  grid-template-columns: 100px 700px;
-  justify-content: space-around;
-  align-items: center;
-  grid-gap: 0px;
   background: rgba(0, 0, 0, 0.6);
   padding: 10px; }
 
 .footer {
-  display: grid;
-  grid-template-columns: 200px 300px 200px;
-  justify-content: space-around;
-  align-items: center;
-  grid-gap: 0px;
   background: rgba(0, 0, 0, 0.6);
   padding: 10px 0px 10px 0px;
-  margin-top: 140px; }
+  margin-top: 119px; }
   .footer p {
     font-family: Verdana,Geneva,sans-serif;
     font-size: 18px;
     color: #f0f0f0;
     margin: 0; }
 
-.booking {
-  display: grid;
-  grid-template-columns: 612px 300px;
-  justify-content: center;
-  align-items: center;
-  grid-gap: 20px; }
-
 h1 {
   font-family: Verdana,Geneva,sans-serif;
   font-size: 30px;
   color: #f0f0f0;
-  grid-column: 1 / span 2;
   text-align: center;
   margin-top: 30px; }
 
@@ -180,6 +204,20 @@ h1 {
   color: #f0f0f0;
   margin-top: 25px; }
 
+.h1 {
+  font-family: Verdana,Geneva,sans-serif;
+  font-size: 30px;
+  color: #f0f0f0;
+  text-align: center;
+  margin-top: 30px; }
+
+.h1 {
+  font-family: Verdana,Geneva,sans-serif;
+  font-size: 30px;
+  color: #f0f0f0;
+  text-align: center;
+  margin-top: 30px; }
+
 body {
-  background-image: url(/img/background.jpg);
+  background-image: url(/project/app/img/background.jpg);
   margin: 0px; }
