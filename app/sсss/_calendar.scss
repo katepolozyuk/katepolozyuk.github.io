@@ -11,7 +11,7 @@
         @include font(21, $day-color-sits);
     }
     .current-month{
-        @include font(21px, white);
+        @include font(20px, white);
         text-align: center;
     }
     .next-month{
