@@ -2,7 +2,7 @@
     @include grid(100px 700px, space-around, center, 0px);
 }
 
-.calendar{
+#calendar{
     @include grid(80px 80px 80px 80px 80px 80px 80px, none, none, 2px);
     .calendar-header{
         grid-column: 1 / span 7;

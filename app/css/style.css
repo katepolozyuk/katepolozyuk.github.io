@@ -5,20 +5,20 @@
   align-items: center;
   grid-gap: 0px; }
 
-.calendar {
+#calendar {
   display: grid;
   grid-template-columns: 80px 80px 80px 80px 80px 80px 80px;
   justify-content: none;
   align-items: none;
   grid-gap: 2px; }
-  .calendar .calendar-header {
+  #calendar .calendar-header {
     grid-column: 1 / span 7;
     display: grid;
     grid-template-columns: 200px 160px 200px;
     justify-content: none;
     align-items: none;
     grid-gap: 0px; }
-  .calendar .day-off {
+  #calendar .day-off {
     grid-column: 1 / span 4; }
 
 .booking {
