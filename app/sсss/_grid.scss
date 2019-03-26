@@ -31,6 +31,9 @@
         grid-column: 1 / span 3;
     }
 }
+.contact{
+    @include grid(700px 300px, none, none, 20px);
+}
 .footer{
     @include grid(200px 300px 200px, space-around, center, 0px);
 }

@@ -48,6 +48,13 @@
   .price .h1 {
     grid-column: 1 / span 3; }
 
+.contact {
+  display: grid;
+  grid-template-columns: 700px 300px;
+  justify-content: none;
+  align-items: none;
+  grid-gap: 20px; }
+
 .footer {
   display: grid;
   grid-template-columns: 200px 300px 200px;
