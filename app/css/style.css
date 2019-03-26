@@ -220,4 +220,5 @@ h1 {
 
 body {
   background-image: url(/app/img/background.jpg);
+  background-attachment: fixed;
   margin: 0px; }
