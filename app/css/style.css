@@ -51,7 +51,7 @@
 .contact {
   display: grid;
   grid-template-columns: 700px 300px;
-  justify-content: none;
+  justify-content: center;
   align-items: none;
   grid-gap: 20px; }
 

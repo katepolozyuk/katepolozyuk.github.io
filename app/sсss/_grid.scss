@@ -32,7 +32,7 @@
     }
 }
 .contact{
-    @include grid(700px 300px, none, none, 20px);
+    @include grid(700px 300px, center, none, 20px);
 }
 .footer{
     @include grid(200px 300px 200px, space-around, center, 0px);
